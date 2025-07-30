@@ -8,13 +8,19 @@ export default function Header({ navigation }) {
     'Inknut-Regular': require('../assets/fonts/InknutAntiqua-Regular.ttf'),
   });
 
-  if (!fontsLoaded) return null;
+  
 
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <Image source={require('../Images/Logo.png')} style={styles.image} />
         <Text style={styles.text}>MY NOTES</Text>
+      </View>
+
+      <View style={styles.Add}>
+
+      <Text style={styles.plus}>+</Text>
+
       </View>
     </View>
   );
@@ -42,4 +48,22 @@ const styles = StyleSheet.create({
     fontFamily: 'Inknut-Regular',
     marginLeft: wp('4%'),
   },
+  Add:{
+    position: 'absolute',
+    right: wp('4%'),
+    top: hp('5%'),
+    backgroundColor: '#6D67CA',
+    width: wp('11%'),
+    height: wp('10%'),
+    borderRadius: '10%',
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  plus:{
+    color: 'black',
+    fontSize: wp('6%'),
+    fontFamily: 'Inknut-Regular',
+    fontWeight: 'bold',
+    lineHeight: wp('10%'),
+  }
 });
