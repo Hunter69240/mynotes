@@ -4,7 +4,7 @@ import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-nat
 import { useFonts } from 'expo-font';
 import Icon from 'react-native-vector-icons/FontAwesome';
 
-export default function CreateNote(){
+export default function CreateNote({navigation}){
 
     const [fontsLoaded] = useFonts({
             'Inknut-Regular': require('../assets/fonts/InknutAntiqua-Regular.ttf'),
@@ -14,7 +14,7 @@ export default function CreateNote(){
 
     return (
         <View style={styles.container}>
-            <TouchableOpacity style={styles.button}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('AddNote')}>
                 <View style={styles.buttonContent}>
                     <Icon name="plus" size={24} color="white" style={styles.icon}/>
                     <Text style={styles.buttonText}>Create Your First Note</Text>

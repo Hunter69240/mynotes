@@ -21,7 +21,7 @@ export default function Home({ navigation }) {
     return (
          <ScrollView contentContainerStyle={{ flexGrow: 1,backgroundColor: 'black' }}>
             <View style={styles.container}>
-                <Header />
+                <Header navigation={navigation}/>
                 <SearchBar style={styles.searchbar}/>
 
                 <View style={styles.line}/>

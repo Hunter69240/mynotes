@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { StyleSheet, Text, View, Image } from 'react-native';
+import { StyleSheet, Text, View, Image,TouchableOpacity } from 'react-native';
 import { widthPercentageToDP as wp, heightPercentageToDP as hp } from 'react-native-responsive-screen';
 import { useFonts } from 'expo-font';
 
@@ -19,7 +19,9 @@ export default function Header({ navigation }) {
 
       <View style={styles.Add}>
 
-      <Text style={styles.plus}>+</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('AddNote')}>
+          <Text style={styles.plus}>+</Text>
+        </TouchableOpacity>
 
       </View>
     </View>
