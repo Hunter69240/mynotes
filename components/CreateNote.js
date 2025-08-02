@@ -41,7 +41,7 @@ const styles = StyleSheet.create({
     },
     buttonText: {
         color: 'white',
-        fontSize: 18,
+        fontSize: wp('4%'),
         fontFamily: 'Inknut-ExtraBold',
         paddingHorizontal: wp('5%'),
     },

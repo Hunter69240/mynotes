@@ -60,7 +60,7 @@ const styles= StyleSheet.create({
     font:{
         fontFamily: 'Inknut-Regular',
         color: 'white',
-        fontSize: 20,
+        fontSize: 15,
     },
     date:{
         color: 'white',
