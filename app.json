@@ -20,7 +20,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "edgeToEdgeEnabled": true
+      "edgeToEdgeEnabled": true,
+      "package": "com.mr_hunter69.mynotes"
     },
     "web": {
       "favicon": "./assets/favicon.png"
@@ -28,5 +29,6 @@
     "plugins": [
       "expo-font"
     ]
+    
   }
 }

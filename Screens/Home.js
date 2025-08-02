@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import Card from '../components/Card';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
-import { API_URL } from '@env';
+import { API_URL } from '../Secrets';
 
 export default function Home() {
   const [title, setTitle] = useState('');
