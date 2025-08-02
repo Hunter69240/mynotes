@@ -28,7 +28,12 @@
     },
     "plugins": [
       "expo-font"
-    ]
-    
+    ],
+    "extra": {
+      "API_URL": "https://mynotes-backend-uoai.onrender.com", 
+      "eas": {
+        "projectId": "876310b0-c607-4980-8e50-1cf2f2caa125"
+      }
+    }
   }
 }

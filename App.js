@@ -8,7 +8,7 @@ import Home from './Screens/Home';
 import CardDisplay from './components/CardDisplay';
 
 const Stack = createNativeStackNavigator();
-import AddNote from './Screens/AddNote';
+
 export default function App() {
   return (
     <GestureHandlerRootView style={{ flex: 1 }}>
@@ -19,11 +19,7 @@ export default function App() {
           component={Home} 
           options={{headerShown:false}}
         />
-        <Stack.Screen 
-          name="AddNote" 
-          component={AddNote} 
-          options={{headerShown:false}}
-        />
+        
 
         <Stack.Screen 
           name="CardDisplay" 

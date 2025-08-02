@@ -11,7 +11,10 @@ import {
 } from 'react-native';
 import Card from '../components/Card';
 import { widthPercentageToDP as wp } from 'react-native-responsive-screen';
-import { API_URL } from '../Secrets';
+import Constants from 'expo-constants';
+
+
+export const API_URL = Constants.expoConfig?.extra?.API_URL;
 
 export default function Home() {
   const [title, setTitle] = useState('');
